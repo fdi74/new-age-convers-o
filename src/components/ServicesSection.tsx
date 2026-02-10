@@ -1,36 +1,30 @@
 import { motion } from "framer-motion";
-import { Stethoscope, Scissors, Search, ShieldCheck, Microscope, Activity } from "lucide-react";
+import { Scissors, Stethoscope } from "lucide-react";
 
 const services = [
   {
-    icon: Stethoscope,
-    title: "Consulta Dermatológica",
-    description: "Avaliação clínica completa da pele, cabelos e unhas com diagnóstico preciso e tratamento personalizado.",
-  },
-  {
     icon: Scissors,
-    title: "Cirurgia Dermatológica",
-    description: "Remoção de lesões, cistos, lipomas e tumores cutâneos com técnicas minimamente invasivas.",
+    title: "Dermatologia Cirúrgica",
+    description:
+      "Procedimentos para remoção ou cauterização de lesões benignas como verrugas, pintas e calosidades. Cirurgia de cisto sebáceo, lipoma, corpo estranho e cantoplastia (unha encravada). Cirurgia para cânceres de pele com ou sem retalhos ou enxertos — priorizando segurança, resolução da patologia e resultado estético.",
+    highlights: [
+      "Remoção de verrugas, pintas e calosidades",
+      "Cisto sebáceo, lipoma e corpo estranho",
+      "Cantoplastia (unha encravada)",
+      "Cirurgia oncológica com retalhos e enxertos",
+    ],
   },
   {
-    icon: Search,
-    title: "Dermatoscopia Digital",
-    description: "Mapeamento e acompanhamento de pintas e lesões com tecnologia avançada de imagem.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Câncer de Pele",
-    description: "Diagnóstico precoce e tratamento cirúrgico de carcinomas e melanomas.",
-  },
-  {
-    icon: Microscope,
-    title: "Biópsia de Pele",
-    description: "Procedimento diagnóstico com análise histopatológica para investigação de lesões suspeitas.",
-  },
-  {
-    icon: Activity,
-    title: "Tratamentos Clínicos",
-    description: "Acne, rosácea, psoríase, dermatite, melasma e outras dermatoses com protocolos atualizados.",
+    icon: Stethoscope,
+    title: "Dermatologia Clínica",
+    description:
+      "Focada na prevenção, diagnóstico e tratamento de doenças que afetam a pele, cabelos e unhas. Inclui cuidados contínuos, acompanhamento individualizado e terapias baseadas em evidências científicas.",
+    highlights: [
+      "Prevenção e diagnóstico de doenças de pele",
+      "Tratamento de cabelos e unhas",
+      "Acompanhamento individualizado",
+      "Terapias baseadas em evidências",
+    ],
   },
 ];
 
@@ -54,25 +48,33 @@ const ServicesSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-teal transition-all duration-500 cursor-pointer"
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              className="group p-10 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-teal transition-all duration-500"
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-teal flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
-                <service.icon className="w-6 h-6 text-primary-foreground" />
+              <div className="w-14 h-14 rounded-xl bg-gradient-teal flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <service.icon className="w-7 h-7 text-primary-foreground" />
               </div>
-              <h3 className="font-display text-2xl font-medium text-foreground mb-3">
+              <h3 className="font-display text-3xl font-medium text-foreground mb-4">
                 {service.title}
               </h3>
-              <p className="font-body text-muted-foreground leading-relaxed">
+              <p className="font-body text-muted-foreground leading-relaxed mb-6">
                 {service.description}
               </p>
+              <ul className="space-y-2">
+                {service.highlights.map((item) => (
+                  <li key={item} className="flex items-center gap-2 font-body text-sm text-foreground/80">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>
