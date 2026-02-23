@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { MessageCircle, Menu, X } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 
-const WHATSAPP_LINK = "https://wa.me/5547999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.";
+const WHATSAPP_LINK = "https://wa.me/5547991549098?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
