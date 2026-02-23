@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MessageCircle, Award, Clock, Users } from "lucide-react";
 import aboutImage from "@/assets/about-image.jpg";
 
-const WHATSAPP_LINK = "https://wa.me/5547999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.";
+const WHATSAPP_LINK = "https://wa.me/5547991549098?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.";
 
 const stats = [
   { icon: Users, value: "5.000+", label: "Pacientes atendidos" },
