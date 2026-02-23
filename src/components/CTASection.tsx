@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle, MapPin, Phone } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5547999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.";
+const WHATSAPP_LINK = "https://wa.me/5547991549098?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.";
 
 const CTASection = () => {
   return (
@@ -45,7 +45,7 @@ const CTASection = () => {
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-teal" />
-              (47) 9 9999-9999
+              (47) 99154 - 9098
             </div>
           </div>
         </motion.div>
