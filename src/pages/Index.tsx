@@ -4,6 +4,7 @@ import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Estetica from "@/components/ProceduresSection";
+import Slider from "@/components/BeforeAfterSlider";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -23,6 +24,7 @@ const Index = () => {
         </section>
         
         <Estetica />
+        <Slider />
         <CTASection />
       </main>
       
