@@ -9,17 +9,24 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
-    <main className="overflow-x-hidden">
+    <>
       <Navbar />
-      <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      <section id="depoimentos">
-        <TestimonialsSection />
-      <CTASection />
+      <main className="overflow-x-hidden">
+        <HeroSection />
+        <ServicesSection />
+        <AboutSection />
+        
+        {/* Fechamento da section corrigido aqui */}
+        <section id="depoimentos">
+          <TestimonialsSection />
+        </section>
+
+        <CTASection />
+      </main>
+      
       <Footer />
       <WhatsAppFloat />
-    </main>
+    </>
   );
 };
 
