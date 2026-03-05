@@ -86,12 +86,8 @@ const Index = () => {
             </div>
 
             {/* O Componente de Slider que recebe as imagens do estado "active" */}
-            <BeforeAfterSlider
-              beforeImage={active.beforeImage}
-              afterImage={active.afterImage}
-              beforeLabel="Antes"
-              afterLabel="Depois"
-            />
+             {/* <BeforeAfterSlider beforeImage={active.beforeImage} afterImage={active.afterImage} beforeLabel="Antes" afterLabel="Depois" /> */}
+         
           </div>
           
           <p className="mt-6 text-sm text-muted-foreground flex items-center gap-2">
