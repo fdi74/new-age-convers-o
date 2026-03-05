@@ -2,7 +2,7 @@ import BeforeAfterSlider from "./BeforeAfterSlider"; // Ajuste o caminho se nece
 
 // 1. Importação das fotos (garanta que os arquivos estejam na pasta src/assets)
 import fotoAntes from "@/assets/WhatsApp Image 2026-03-05 at 10.02.26.jpeg";
-import fotoDepois from "@/assets/WhatsApp Image 2026-03-05 at 10.02.28.jpeg";
+import fotoDepois from "@/assets/WhatsApp Image 2026-03-05 at 10.02.28.jpeg"; 
 
 const PeelingComparison = () => {
   return (
